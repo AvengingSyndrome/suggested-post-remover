@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+
+	"name": "No Suggest",
+	"description": "Removes irritating 'suggested post'.",
+	"version": "1.0",
+    "content_scripts": [
+    {
+	  "run_at":"document_end",
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["jquery.js","suggest.js"],
+	  "all_frames": true
+    }]
+}
