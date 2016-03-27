@@ -11,6 +11,11 @@ function remove () {
       $(this).parent().parent().parent().parent().parent().remove();
     }
   });
+  $(".uiStreamSponsoredLink").each (function (i) {
+    if ($(this).text() == "Sponsored") {
+      $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().remove();
+    }
+  });
 }
 
 remove();
