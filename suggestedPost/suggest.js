@@ -13,7 +13,7 @@ function remove () {
   });
   $(".uiStreamSponsoredLink").each (function (i) {
     if ($(this).text() == "Sponsored") {
-      $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().remove();
+        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().parent();
     }
   });
 }
