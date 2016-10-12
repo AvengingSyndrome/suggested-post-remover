@@ -8,12 +8,12 @@ observer.observe(document, {subtree: true, attributes: true,childList: true});
 function remove () {
   $("._5g-l").each (function (i) {
     if ($($(this).children()[0]).text() == "Suggested Post") {
-      $(this).parent().parent().parent().parent().parent().remove();
+      $(this).parent().parent().parent().parent().parent().parent().parent().remove();
     }
   });
   $(".uiStreamSponsoredLink").each (function (i) {
     if ($(this).text() == "Sponsored") {
-        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().remove();
+        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().remove();
     }
   });
 }
